@@ -114,7 +114,8 @@ function toggleButton() {
 function tellMe(joke) {
   console.log("tell me:", joke);
   VoiceRSS.speech({
-    key: "",
+    // Enter API Key below from VoiceRSS API
+    key: "<ENTER API KEY HERE>",
     src: joke,
     hl: "en-us",
     v: "Linda",
