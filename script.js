@@ -114,7 +114,7 @@ function toggleButton() {
 function tellMe(joke) {
   console.log("tell me:", joke);
   VoiceRSS.speech({
-    key: "<API Key here>",
+    key: "",
     src: joke,
     hl: "en-us",
     v: "Linda",
@@ -129,7 +129,7 @@ function tellMe(joke) {
 async function getJokes() {
   let joke = "";
   const apiUrl =
-    "https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist";
+    "https://v2.jokeapi.dev/joke/Any";
   try {
     const response = await fetch(apiUrl);
     const data = await response.json();
